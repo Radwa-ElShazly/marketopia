@@ -1,0 +1,19 @@
+.progressContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* المسافة بين الدوائر */
+  }
+  
+  .circleBackground {
+    stroke: #ddd;
+  }
+  
+  .circleProgress {
+    stroke: rgb(83, 83, 255);
+  }
+  
+  .circleText {
+    font-size: 3em;
+    font-weight: bold;
+    fill: rgb(83, 83, 255);
+  }

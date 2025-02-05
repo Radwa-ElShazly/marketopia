@@ -1,0 +1,153 @@
+/* @font-face {
+    font-family:bold;
+    src: url(../font/Work_Sans/static/WorkSans-ExtraBold.ttf);
+}
+@font-face {
+    font-family:semiBold;
+    src: url(../font/Work_Sans/static/WorkSans-SemiBold.ttf);
+}
+@font-face {
+    font-family:light;
+    src: url(../font/Work_Sans/static/WorkSans-Light.ttf);
+}
+@font-face {
+    font-family:Regular;
+    src: url(../font/Work_Sans/static/WorkSans-Regular.ttf);
+} */
+
+/* home section */
+.bgHome{
+    position: relative;
+    background-image: url('../images/bg-image-7.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.layer{
+    background-color: rgb(0, 0, 0,0.2);
+    width: 100%;
+    height: 100%;
+}
+.subTitleHome{
+    background-color: rgba(240, 248, 255, 0.441);
+    color: white;
+    font-size: 20px; 
+    font-weight: 500;
+    width: fit-content;
+    padding: 0px 20px;
+    border-radius: 50px;
+}
+.mainTitle{
+    font-size: 60px;
+    color: white;
+}
+
+.animaText{
+    background: linear-gradient(to right, rgba(70, 70, 239, 0.934),#ea01ffea,#ea01ffec,#ea01ffea );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+
+.btn{
+    padding: 1em 1.5em;
+    margin-right: 20px;
+    border: 1px solid black;
+    border-radius: 25px 7px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    transition: all .7s ease;
+    background: linear-gradient(277deg, rgba(213, 213, 213, 0.1) 0%, rgba(213, 213, 213, 0.02) 50%, rgba(42, 42, 42, 0.02) 50%, rgba(42, 42, 42, 0.2) 100%), linear-gradient(295deg, rgba(73, 73, 73, 0.3) 0%, rgba(73, 73, 73, 0.1) 50%, rgba(229, 229, 229, 0.1) 50%, rgba(229, 229, 229, 0.03) 100%), linear-gradient(145deg, rgba(77, 77, 77, 0.1) 0%, rgba(77, 77, 77, 0.1) 50%, rgba(123, 123, 123, 0.1) 50%, rgba(123, 123, 123, 0.1) 100%), linear-gradient(54deg, rgba(51, 51, 51, 0.3) 0%, rgba(51, 51, 51, 0.1) 50%, rgba(29, 29, 29, 0.2) 50%, rgba(29, 29, 29, 0.03) 100%), linear-gradient(170deg, rgba(9, 9, 9, 0.02) 0%, rgba(9, 9, 9, 0.02) 50%, rgba(243, 243, 243, 0.02) 50%, rgba(243, 243, 243, 0.02) 100%), linear-gradient(264deg, rgba(214, 214, 214, 0.01) 0%, rgba(214, 214, 214, 0.01) 50%, rgba(153, 153, 153, 0.01) 50%, rgba(153, 153, 153, 0.01) 100%), linear-gradient(90deg, rgb(99, 48, 222), rgb(76, 212, 233));
+}
+.btn:hover{
+ border-radius: 7px 25px;
+background: linear-gradient(45deg, rgb(239, 7, 129) 0%, rgb(239, 7, 129) 6%, rgb(208, 10, 112) 6%, rgb(208, 10, 112) 25%, rgb(177, 13, 96) 25%, rgb(177, 13, 96) 40%, rgb(147, 16, 79) 40%, rgb(147, 16, 79) 45%, rgb(116, 19, 62) 45%, rgb(116, 19, 62) 53%, rgb(85, 22, 46) 53%, rgb(85, 22, 46) 66%, rgb(54, 25, 29) 66%, rgb(54, 25, 29) 100%);
+letter-spacing: .2em;
+border: 1px solid white;   
+}
+
+/* lifeStyle section */
+.subTitle{
+    font-size: 40px;
+    font-weight:bold;
+}
+.themeGradient{
+    background: linear-gradient(to right, blue,#5a01ff,#ea01ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+
+/* Transformation section */
+.trasformContent{
+  overflow: hidden;
+
+}
+.trasformImage{
+  width: 100%;
+  height: 60%;
+  border-radius: 10px;
+  transition: transform 0.5s;
+}
+
+.trasformContent:hover .trasformImage{
+    transform: scale(1.1);
+}
+
+
+/* fixed section */
+.fixedBg{
+    background-attachment: fixed;
+    background-image: url("../images/bg-image-8.jpg");
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* howToChoose */
+.item{
+    background: white;
+    box-shadow:0px 6px 34px rgba(215, 216, 222, 0.41);
+    border-radius: 5px;
+    width: 100%;
+    padding: 40px;
+    position: relative;
+}
+
+.number{
+    color: rgb(0, 85, 255);
+    font-size: 50px;
+}
+.subBtn{
+    text-decoration: none;
+    color: black;
+    height: 50px;
+    width: 100px;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    transition: 0.3s;
+    background-color: rgba(156, 161, 160, 0.3);
+    animation: glow 1s infinite;
+    rotate: 0;
+    transition: 0.5s;
+    color: black;
+}
+ 
+
+@keyframes glow{
+    0% {
+        box-shadow: 5px 5px 20px rgb(93, 52, 168), -5px -5px 20px rgb(93, 52, 168);
+    }
+    50% {
+        box-shadow: 5px 5px 20px rgb(81, 224, 210), -5px -5px 20px rgb(81, 224, 210);
+    }
+    100% {
+        box-shadow: 5px 5px 20px rgb(93, 52, 168), -5px -5px 20px rgb(93, 52, 168);
+    }
+  }
+  
+

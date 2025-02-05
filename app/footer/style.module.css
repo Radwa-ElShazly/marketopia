@@ -1,0 +1,111 @@
+.socialIcon{
+    background-color:rgba(209, 210, 212, 0.42);
+    border-radius: 50%;
+    padding:7px 15px 12px 15px;
+    margin-right:10px;
+    margin-top:5px;
+    transition: all 0.5s;
+    font-size: 18px;
+    width: fit-content;
+}
+.socialIcon:hover{
+    background-color:#09c;
+    color: aliceblue;
+}
+
+.navItem{
+    position: relative;
+    display: inline;
+}
+
+.contactBtn{
+    position: relative;
+    margin-top: 40px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    padding: .9em 1.2em;
+    color: #ffffff;
+    cursor: pointer;
+    letter-spacing: .08em;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.contactBtn::before{
+    content: "";
+    position: absolute;
+    inset: 5px;
+    border: 3px solid transparent;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(7deg, #009cff 50%, #522ef4 65%, #9537e3 80%);
+    border-radius: 10px;
+}
+
+
+.contactLink{
+    text-decoration: none;
+    color:black;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+
+
+.link{
+    text-decoration: none;
+    color: gray; 
+}
+
+.link::after{
+    position: absolute;
+    content: "";
+    width:0px;
+    height:2.5px;
+    background-color:#0078ff;
+    bottom:-5px;
+    left:px;
+    transition: all .5s;
+}
+.navItem:hover .link::after{
+    width: 21%;
+    color:#0078ff;
+}
+
+.navLink{
+    text-decoration: none;
+    color: gray;
+}
+.navLink::after{
+    position: absolute;
+    content: "";
+    width:0px;
+    height:2px;
+    background-color:#0078ff;
+    bottom:-5px;
+    left:3px;
+    transition: all .5s;
+}
+.navItem:hover .navLink::after{
+    width:100%;
+    color:#0078ff;
+}
+
+
+.copyRight{
+    position: relative;
+    font-size: 18px;
+    color: gray;
+    margin: 40px 0px 10px;
+}
+.copyRight::after{
+position: absolute;
+content: "";
+top: -3px;
+left: 0px;
+width: 100%;
+height: 1px;
+background-color: rgba(128, 128, 128, 0.217);
+}
